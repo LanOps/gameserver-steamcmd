@@ -6,9 +6,9 @@ RUN dpkg --add-architecture i386
 RUN apt-get update && apt-get install -y \
         lib32stdc++6 \
         lib32gcc1 \
-        lib32tinfo5	\
-		libncurses5	\
-		libncurses5:i386 \
+        lib32tinfo5 \
+        libncurses5 \
+        libncurses5:i386 \
         libc6:i386 \
         libstdc++6:i386 \
         lib32z1 \
