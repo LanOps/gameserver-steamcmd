@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Thornton Phillis (Th0rn0@lamops.co.uk)
+MAINTAINER Thornton Phillis (Th0rn0@lanops.co.uk)
 
 # Install, update & upgrade packages
 RUN dpkg --add-architecture i386
