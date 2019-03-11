@@ -128,3 +128,8 @@ steps:
 trigger:
   branch:
   - master
+---
+kind: signature
+hmac: 7cf8bc4b9a6f18083839958a4c9d54dfb9017b182b748fac0e66d6d7f804c555
+
+...
