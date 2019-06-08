@@ -16,6 +16,7 @@ RUN apt-get update && apt-get upgrade -y && \
     libncurses5 \
     libncurses5:i386 \
     zlib1g:i386 \
+    nano \
     ca-certificates
 
 RUN apt-get clean autoclean && \
