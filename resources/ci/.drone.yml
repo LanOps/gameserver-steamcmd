@@ -14,7 +14,7 @@ steps:
     template: |
       {
         "username": "SteamCMD Docker Build Drone",
-        "content": "__***{{uppercase build.branch }}***__ - \"${DRONE_COMMIT_MESSAGE}\" - Docker Build Started.",
+        "content": "__***{{uppercase build.branch }}***__ - \"${DRONE_COMMIT_MESSAGE}\" - Build Started.",
         "avatar_url": "https://cdn.worldvectorlogo.com/logos/drone.svg"
       }
   when:
@@ -31,7 +31,7 @@ steps:
     template: |
       {
         "username": "SteamCMD Docker Build Drone",
-        "content": "__***{{uppercase build.branch }}***__ - \"${DRONE_COMMIT_MESSAGE}\" - **TAGGED** Docker Build Started.",
+        "content": "__**TAGGED**__ - \"${DRONE_COMMIT_MESSAGE}\" - Build Started.",
         "avatar_url": "https://cdn.worldvectorlogo.com/logos/drone.svg"
       }
   when:
@@ -116,7 +116,7 @@ steps:
     template: |
       {
         "username": "SteamCMD Docker Build Drone",
-        "content": "__***{{uppercase build.branch }}***__ - \"${DRONE_COMMIT_MESSAGE}\" - Commit: {{ build.commit }} - Image has been built and pushed to Docker Hub.",
+        "content": "__**TAGGED**__ - \"${DRONE_COMMIT_MESSAGE}\" - Commit: {{ build.commit }} - Image has been built and pushed to Docker Hub.",
         "avatar_url": "https://cdn.worldvectorlogo.com/logos/drone.svg"
       }
   when:
@@ -130,6 +130,6 @@ trigger:
   - master
 ---
 kind: signature
-hmac: dc8acefc118fac34f6657b6c29f31c899f9582c7c0333a604283a91b8776adc4
+hmac: 83e36b9bca540d5a6c48f4f91308c078c55d231b3ba29c5dfdde9c24afb256c6
 
 ...
