@@ -13,7 +13,7 @@ steps:
       from_secret: DISCORD_WEBHOOK_URL
     template: |
       {
-        "username": "SteamCMD Docker Build Drone",
+        "username": "SteamCMD Docker CI",
         "content": "__***{{uppercase build.branch }}***__ - \"${DRONE_COMMIT_MESSAGE}\" - Build Started.",
         "avatar_url": "https://cdn.worldvectorlogo.com/logos/drone.svg"
       }
@@ -30,7 +30,7 @@ steps:
       from_secret: DISCORD_WEBHOOK_URL
     template: |
       {
-        "username": "SteamCMD Docker Build Drone",
+        "username": "SteamCMD Docker CI",
         "content": "__**TAGGED**__ - \"${DRONE_COMMIT_MESSAGE}\" - Build Started.",
         "avatar_url": "https://cdn.worldvectorlogo.com/logos/drone.svg"
       }
@@ -83,7 +83,7 @@ steps:
       from_secret: DISCORD_WEBHOOK_URL
     template: |
       {
-        "username": "SteamCMD Docker Build Drone",
+        "username": "SteamCMD Docker CI",
         "content": "__***{{uppercase build.branch }}***__ - \"${DRONE_COMMIT_MESSAGE}\" - Commit: {{ build.commit }} Failed. Fix me please!",
         "avatar_url": "https://cdn.worldvectorlogo.com/logos/drone.svg"
       }
@@ -98,7 +98,7 @@ steps:
       from_secret: DISCORD_WEBHOOK_URL
     template: |
       {
-        "username": "SteamCMD Docker Build Drone",
+        "username": "SteamCMD Docker CI",
         "content": "__***{{uppercase build.branch }}***__ - \"${DRONE_COMMIT_MESSAGE}\" - Commit: {{ build.commit }} - Image has been built and pushed to Docker Hub.",
         "avatar_url": "https://cdn.worldvectorlogo.com/logos/drone.svg"
       }
@@ -115,7 +115,7 @@ steps:
       from_secret: DISCORD_WEBHOOK_URL
     template: |
       {
-        "username": "SteamCMD Docker Build Drone",
+        "username": "SteamCMD Docker CI",
         "content": "__**TAGGED**__ - \"${DRONE_COMMIT_MESSAGE}\" - Commit: {{ build.commit }} - Image has been built and pushed to Docker Hub.",
         "avatar_url": "https://cdn.worldvectorlogo.com/logos/drone.svg"
       }
@@ -130,6 +130,6 @@ trigger:
   - master
 ---
 kind: signature
-hmac: 83e36b9bca540d5a6c48f4f91308c078c55d231b3ba29c5dfdde9c24afb256c6
+hmac: 9a314655a337659bec5650d1f0238eefd209bd31577f9fb1a93a5e1344552b8d
 
 ...
