@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Thornton Phillis (Th0rn0@lanops.co.uk)
+MAINTAINER Thornton Phillis (dev@th0rn0.co.uk)
 
 # Install, update & upgrade packages
 RUN dpkg --add-architecture i386
